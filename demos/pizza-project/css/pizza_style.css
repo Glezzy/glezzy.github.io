@@ -1,0 +1,25 @@
+body, html {
+  height: 100%;
+}
+/*.bg {
+ 
+  background-image: url(../img/bkg.jpg);
+
+  
+  height: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+.jumbotron { 
+	height:300px; 
+	background-image: url(../img/pizz.jpg); 
+	background-size: cover;
+	color: #fff; 
+	text-shadow: 0 0 20px #000;
+}
+
+ 

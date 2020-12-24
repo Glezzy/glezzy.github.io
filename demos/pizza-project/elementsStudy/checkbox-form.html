@@ -1,0 +1,93 @@
+<html>
+<head>
+	
+
+</head>
+<body>
+<div class="card-body">
+		      <h5 class="card-title">Veggies:</h5>
+		      <fieldset>
+				    
+
+				    <div>
+				        <input type="checkbox" id="tomatoes" name="veggies"
+				               value="tomatoes"  />
+				        <label for="tomatoes">Tomatoes</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="onions" name="veggies"
+				               value="onions" />
+				        <label for="onions">Onions</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="olives" name="veggies"
+				               value="olives" />
+				        <label for="olives">Olives</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="mushrooms" name="veggies"
+				               value="mushrooms"  />
+				        <label for="mushrooms">Mushrooms</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="pineapple" name="veggies"
+				               value="pineapple" />
+				        <label for="pineapple">Pineapple</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="spinach" name="veggies"
+				               value="spinach" />
+				        <label for="spinach">Spinach</label>
+				    </div>
+
+				</fieldset>
+		      
+		    </div>
+
+		    <div class="my-5">
+			<button type="button" class="btn btn-danger btn-lg btn-block" onclick="veggies()">Make me a pizza!</button>
+		</div>
+
+		<div id = "veggies-checked"></div>
+		<div id = "veggies-price"></div>
+
+		<script type="text/javascript">
+			function veggies(){
+				var extraOverOne = [0, 1, 1, 1, 1, 1, 1, 1, 1]
+				var veggiesChecked = [];
+				var veggiesElements = document.getElementsByName('veggies');
+
+				for (var i = 0; i <= veggiesElements.length-1; i++){
+					if (veggiesElements[i].checked) {
+					veggiesChecked.push(veggiesElements[i]);
+
+					}
+				}
+
+				for (var i = 0; i <= veggiesChecked.length-1; i++){
+					document.getElementById('veggies-checked').innerHTML += veggiesChecked[i].value + "<br>";
+				}
+
+				for (var i = 0; i <= veggiesChecked.length-1; i++){
+					document.getElementById('veggies-price').innerHTML += "+ $" + extraOverOne[i] + "<br>";
+				}
+			}
+			
+				
+				
+				
+				
+			
+				
+			
+
+			
+
+		</script>
+	</body>
+		</html>

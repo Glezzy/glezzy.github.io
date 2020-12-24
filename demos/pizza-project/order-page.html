@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    	<link rel="stylesheet" type="text/css" href="./css/pizza_style.css">
+
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+
+    <body>
+    	
+    	
+		
+    	<!--      Name        -->
+    	<div class="jumbotron jumbotron-fluid rgba-blue-light">
+		  <div class="container">
+		    <h1 class="display-4">Greggo's Pizza</h1>
+		    <p class="lead">Make it your own</p>
+		  </div>
+		</div>
+
+    	<!--      /Name       -->
+		<div class="container">
+
+
+    	<!--      Menu add-ons        -->
+		<div class="card-deck">
+
+		<!--      Card One Size        -->
+		  <div class="card">
+		    <div class="card-body">
+		      <h5 class="card-title">Size:</h5>
+		      
+		      		<form id="card0">
+					    <fieldset>
+					       
+					        <div>
+					            <input type="radio" id="personal" 
+					                   name="size" value="personal" checked />
+					            <label for="personal">Personal</label>
+					        </div>
+
+					        <div>
+					            <input type="radio" id="medium" 
+					                   name="size" value="medium"  />
+					            <label for="medium">Medium</label>
+					        </div>
+
+					        <div>
+					            <input type="radio" id="large" 
+					                   name="size" value="large" />
+					            <label for="large">Large</label>
+					        </div>
+
+					        <div>
+					            <input type="radio" id="extra-large" 
+					                   name="size" value="extra large" />
+					            <label for="extra-large">Extra Large</label>
+					        </div>
+
+					    </fieldset>
+					</form>
+		    </div>
+		  </div>
+		  <!--      /Card One        -->
+
+
+		  <!--      Card Two  Meats     -->
+
+		  <div class="card">
+		    
+		    <div class="card-body">
+		      <h5 class="card-title">Meats:</h5>
+		      <form id="card1">
+		     	<fieldset>
+				    
+				    <div>
+				        <input type="checkbox" id="pepperoni" name="meats"
+				               value="pepperoni"  />
+				        <label for="pepperoni">Pepperoni</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="sausage" name="meats"
+				               value="sausage" />
+				        <label for="sausage">Sausage</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="canadian" name="meats"
+				               value="canadian bacon" />
+				        <label for="canadian">Canadian Bacon</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="beef" name="meats"
+				               value="ground beef"  />
+				        <label for="beef">Ground Beef</label>
+				    </div>
+
+				</fieldset>
+			</form>
+
+		    </div>
+		  </div>
+		  <!--      /Card Two        -->
+
+
+
+		  <!--      Card Three        -->
+
+		  <div class="card">
+		    
+		    <div class="card-body">
+		      <h5 class="card-title">Veggies:</h5>
+		     <form id="card2"> <fieldset>
+				    
+
+				    <div>
+				        <input type="checkbox" id="tomatoes" name="veggies"
+				               value="tomatoes"  />
+				        <label for="tomatoes">Tomatoes</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="onions" name="veggies"
+				               value="onions" />
+				        <label for="onions">Onions</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="olives" name="veggies"
+				               value="olives" />
+				        <label for="olives">Olives</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="mushrooms" name="veggies"
+				               value="mushrooms"  />
+				        <label for="mushrooms">Mushrooms</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="pineapple" name="veggies"
+				               value="pineapple" />
+				        <label for="pineapple">Pineapple</label>
+				    </div>
+
+				    <div>
+				        <input type="checkbox" id="spinach" name="veggies"
+				               value="spinach" />
+				        <label for="spinach">Spinach</label>
+				    </div>
+
+				</fieldset></form>
+		    </div>
+		  </div>
+		  <!--      /Card Three        -->
+
+		  <!--      Card Four        -->
+
+		    <div class="card">
+		    
+		    <div class="card-body">
+		      <h5 class="card-title">Cheese:</h5>
+		      	<form id="card3">
+				    <fieldset>
+				        
+				        <div>
+				            <input type="radio" id="regular" 
+				                   name="cheese" value="regular" checked />
+				            <label for="regular">Regular</label>
+				        </div>
+
+				        <div>
+				            <input type="radio" id="extra" 
+				                   name="cheese" value="extra"  />
+				            <label for="extra">Extra</label>
+				        </div>
+				    </fieldset>
+				</form>
+		    </div>
+		  </div>
+		  <!--      /Card Four        -->
+
+
+		<!--      Card Five        -->
+		<div class="card">
+		    <div class="card-body">
+		        <h5 class="card-title">Crust:</h5>
+		      	<form id="card4">
+				    <fieldset>
+				        <div>
+				            <input type="radio" id="plain" 
+				                   name="crust" value="plain" checked />
+				            <label for="plain">Plain</label>
+				        </div>
+
+				        <div>
+				            <input type="radio" id="pretzel" 
+				                   name="crust" value="pretzel"  />
+				            <label for="pretzel">Garlic</label>
+				        </div>
+
+				        <div>
+				            <input type="radio" id="thin" 
+				                   name="crust" value="thin"  />
+				            <label for="thin">Thin</label>
+				        </div>
+				        <div>
+				            <input type="radio" id="cheese-stuffed" 
+				                   name="crust" value="cheese-stuffed"  />
+				            <label for="cheese-stuffed">Cheese-Stuffed </label>
+				        </div>
+				    </fieldset>
+				</form>
+		    </div>
+		</div>
+		<!--      /Card Five        -->
+
+
+		</div>
+
+
+		<!-- Button trigger modal -->
+		<div class="my-5 col-sm-3 mx-auto px-auto" style="width:200px">
+			<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModal" onclick="bill()">Order</button>
+			<button type="button" class="btn btn-secondary btn-lg " onclick="resetValues()">Clear</button>
+		</div>
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Total:</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+			     <div class="modal-body">
+			        <div>
+				    <div id="cart">
+
+			    	<div class="row">
+					  <div class="col-sm-8 text-capitalize" > <h5>You Chose:</h5> </div>
+					  <div class="col-sm-4 text-right" > <h5>Subtotal:</h5> </div>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-8 text-capitalize" id = "size-checked"></div>
+					  <div class="col-sm-4 text-right" id = "size-price"></div>
+					</div>
+
+					<div class="row mt-3">
+					  <div class="col-sm-8 text-capitalize" id = "size-checked"><h6>With:</h6></div>
+					</div>
+
+					<div class="row">
+					  <div  class="col-sm-8 text-capitalize" id = "veggies-checked"></div>
+					  <div class="col-sm-4 text-right" id = "veggies-price"></div>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-8 text-capitalize" id = "meats-checked"></div>
+					  <div class="col-sm-4 text-right" id = "meats-price"></div>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-8 text-capitalize" id = "cheese-checked"></div>
+					  <div class="col-sm-4 text-right" id = "cheese-price"></div>
+					</div>
+
+					<div class="row">
+					  <div class="col-sm-8 text-capitalize" id = "crust-checked"></div>
+					  <div class="col-sm-4 text-right" id = "crust-price"></div>
+					</div>
+					
+					<div class="row mt-5">
+					  <div class="col-sm-8" id="totalPrice1"><h3>Total Price:</h3></div>
+					  <div class="col-sm-4 text-right"><h3 id = "total-price"></h3></div>
+					</div>
+
+					</div>
+				</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button id="clearModalButton" type="button" class="btn btn-secondary" data-dismiss="modal" ">Cancel</button>
+		     
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		
+
+	<script type="text/javascript" src="./js/bill.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+		
+		
+	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

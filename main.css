@@ -1,0 +1,358 @@
+/* 1. Base */
+
+html {
+   background-image: linear-gradient(to bottom left, #649173, #dbd5a4); 
+   font-family: "Quicksand", sans-serif;
+   font-size: 16px;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   line-height: 1.5;
+   min-height: 100vh;
+   min-width: 300px;
+   overflow-x: hidden;
+   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+   color: white
+ }
+
+ 
+
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* 2. Shared styling  */
+
+.wallpaper,
+.picture-shadow,
+.picture-image {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.wallpaper,
+.picture-shadow2,
+.picture-image2 {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.job,
+.button {
+  font-family: "Montserrat", "Quicksand", sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.button,
+.social a {
+  transform-origin: center;
+  transition-duration: 100ms;
+}
+
+/* 3. Specific */
+
+.wallpaper {
+  background-image: url("images/mckenzie.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.0;
+  position: fixed;
+}
+
+.wallpaper2 {
+  background-image: url("images/mckenzie.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+  position: fixed;
+}
+.content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.side {
+  max-height: 20rem;
+  max-width: 65rem;
+}
+
+.side2 {
+  max-height: 0rem;
+  max-width: 20rem;
+  margin-left: 1rem;
+}
+
+.picture {
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.picture-shadow {
+  border-radius: 290486px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: relative;
+  top: 10%;
+}
+
+.picture-shadow2 {
+  border-radius: 290486px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: relative;
+  top: 10%;
+}
+
+.picture-image {
+  border-radius: 290486px;
+  position: absolute;
+}
+
+.picture-image2 {
+  border-radius: 290486px;
+  position: absolute;
+  margin-top: -19rem;
+  margin-left: 2rem;
+}
+
+.about {
+  max-width: 26rem;
+  margin-left: 31rem;
+  margin-top: -5rem;
+}
+
+.name {
+  font-size: 2.25rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+}
+
+.job {
+  color: #ffe479;
+  font-size: 0.75rem;
+}
+
+.hr {
+  background-color: #f8f8f8;
+  border: none;
+  content: "";
+  height: 1px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  transform-origin: center left;
+  width: 4rem;
+}
+.description {
+  font-size: 1.5rem;
+}
+
+.contact {
+  display: inline-block;
+  margin-top: -0.5rem;
+  vertical-align: top;
+}
+
+.button {
+  background-color: #fff;
+  border-radius: 290486px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: #197c0c;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 1.25em 2em;
+  text-shadow: none;
+  transition-property: box-shadow, transform;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.button:hover {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: scale(0.98) translateY(-2px);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-38%, -140%);
+-ms-transform: translate(-50%, -50%);
+background-color: transparent;
+color: white;
+font-size: 48px;
+padding: 12px 24px;
+border: darkseagreen;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.btn:hover .btn2:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+  }
+  
+.btn:active .btn2:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translateY(-2px);
+  }
+
+.container .btn:hover {
+  background-color: transparent;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container2 img {
+  width: 100%;
+  height: auto;
+}
+
+.btn2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 175%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 48px;
+  padding: 12px 24px;
+  border: darkseagreen;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container2 .btn2:hover {
+  background-color:transparent;
+}
+
+.social {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.social li {
+  height: 2rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  width: 2rem;
+}
+
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+}
+
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.social a:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.social2 {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+
+.social2 img:hover {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  
+.social2 img:active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+
+  
+
+/* 4. Responsiveness */
+
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 4rem;
+  }
+
+  .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 65rem;
+    order: 2;
+    width: 18rem;
+  }
+
+  .side2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 1rem;
+    order: 2;
+    width: 18rem;
+  }
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
